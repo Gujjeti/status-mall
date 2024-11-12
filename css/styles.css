@@ -1,0 +1,379 @@
+:root{
+    --text_priamry:#cb7362
+}
+
+
+.text_priamry{
+    color: var(--text_priamry);
+}
+
+small{
+    color: var(--text_priamry);
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.text_grey, small{
+    color: #000;
+    opacity: 0.6;
+}
+body{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 100%;
+
+}
+.menu-icon svg{
+    fill: var(--text_priamry);
+}
+
+.menu-wrapper{
+    cursor: pointer;
+}
+
+.menu-wrapper span{
+    color: var(--text_priamry);
+    text-transform: uppercase;
+}
+
+header{
+    padding: 10px 0;
+}
+
+header a{
+    color: var(--text_priamry);
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+
+.logo{
+    width: 130px;
+}
+
+
+.swiper-pagination-bullet{
+    opacity: 1;
+    background-color: #fff;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--text_priamry);
+}
+
+.swiper, .swiper-slide {
+    width: 100%;
+    height: calc(100vh - 83px);
+    position: relative;
+  }
+
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slider-caption {
+    color: #fff;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    font-weight: 400;
+    transform: translateX(200px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    opacity: 0;
+  }
+
+  .swiper-slide-active  .slider-caption{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .heading-1{
+    font-size: 2.25em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+
+
+  .list-style-2 li span:first-child{
+    font-weight: 600;
+    opacity: 0.8;
+  }
+
+  .list-style-2 li {
+   line-height: 1.4;
+  }
+
+  .box-icon .icon svg{
+    width: 3em;
+    height: 3em;
+    fill: #fff
+  }
+
+
+.box-icon .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0px auto 30px auto;
+    background: var(--text_priamry);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+
+.envelope {
+    width: 600px; /* Set width to 600px */
+    height: 400px; /* Set height to 400px */
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.envelope:before {
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: 3;
+    position: absolute;
+    border-left: 600px solid transparent; /* Adjusted for new width */
+    border-bottom: 400px solid #fff; /* Adjusted for new height */
+    box-shadow: 0px 5px 5px #a7a7a7;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.envelope:after {
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    position: absolute;
+    border-right: 600px solid transparent; /* Adjusted for new width */
+    border-bottom: 400px solid #fff; /* Adjusted for new height */
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    transform-origin: top;
+    border-top: 200px solid var(--text_priamry); /* Adjusted for new height */
+    border-left: 300px solid transparent; /* Adjusted for new width */
+    border-right: 300px solid transparent; /* Adjusted for new width */
+    transition: transform 1s ease-in-out;
+    transform: rotateX(0deg);
+}
+
+.letter {
+    position: relative;
+    top: 150px; /* Adjusted to fit the new height */
+    padding: 20px 10px;
+    width: 70%; /* Adjust width to fit within the envelope */
+    height: 200px; /* Height of the letter */
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    transition: top 1s ease-in-out, height 1s ease-in-out;
+    transition-delay: 1s; /* Delay the form animation */
+    opacity: 0;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #ffff;
+    box-shadow: 0px 5px 5px #ddd;
+}
+
+label {
+    color: var(--text_priamry);
+    margin: 0 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px #fff;
+    font-size: 13px;
+}
+
+input,
+textarea {
+    width: 90%;
+    height: 35px;
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    background: transparent;
+    outline: none;
+    color: var(--text_priamry);
+    border: 1px solid var(--text_priamry);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+textarea {
+    height: 105px;
+    max-height: 105px;
+    max-width: 90%;
+    background: repeating-linear-gradient(to bottom, transparent, transparent 20px, #ddd 20px, #ddd 21px);
+    line-height: 20px;
+}
+
+form.letter p {
+    display: flex;
+    align-items: end;
+}
+
+
+input:focus,
+textarea:focus {
+    background-color: #F8F4EE;
+}
+
+
+
+
+.envelope.opened .back {
+    transform: rotateX(180deg);
+}
+
+.envelope.opened .letter {
+    top: -200px; /* Adjust to fit the new height */
+    height: 340px; /* Adjust to fit the new height */
+    opacity: 1;
+    z-index: 2;
+}
+
+.cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    z-index: 3; /* Higher than the letter form */
+    text-align: center;
+    pointer-events: none; /* Makes sure the text does not interfere with the click */
+}
+
+.envelope.opened .cover-text {
+    display: none; /* Hide the text when the envelope is opened */
+}
+
+.evn-logo {
+    position: absolute;
+    bottom: 50px;
+    z-index: 999999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-shadow{
+    text-shadow: 3px 3px 2px rgb(0 0 0 / 46%);
+}
+
+
+.swiper-slide.overlay-black::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.evn-logo img{
+    width: 150px;
+}
+  .list-group-item{
+    border-color: var(--text_priamry);
+  }
+
+
+
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 14px 22px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 0;
+    margin-top: 40px;
+
+
+  }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: var(--text_priamry);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+  .cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #000;
+  }
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #000;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+    width: 100%;
+    background: var(--text_priamry);
+  }
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  .cta:active {
+    transform: scale(0.96);
+  }
+
+
+@media screen and (min-width: 480px) {
+   .container-fluid{
+    padding: 0 5%;
+   }
+  }
