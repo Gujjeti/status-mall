@@ -80,6 +80,11 @@ tl4.addLabel('start')
     .from('.section-5 .envelope', { x:-200, autoAlpha: 0 })
 
 
+    document.querySelector('.close-env').addEventListener('click', function() {
+      console.log('as')
+      this.classList.toggle('opened');
+    });
+
 
   document.querySelector('.envelope').addEventListener('click', function() {
     this.classList.toggle('opened');
@@ -95,3 +100,6 @@ document.querySelector('.letter').addEventListener('submit', function(event) {
     this.reset();
     document.querySelector('.envelope').classList.remove('opened'); // Optional: close envelope after submission
 });
+
+
+
