@@ -374,7 +374,7 @@
         <div class="cover-text"></div>
     </div>
    
-    <form class="letter" id="contactForm" method="post" action="contact.php" onsubmit=" validateForm(event)">
+    <form class="letter" id="contactForm" method="post" >
         <p>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" />
