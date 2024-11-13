@@ -22,7 +22,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+
 
   </head>
   <body>
@@ -40,12 +41,12 @@
                     </div>
         
                     <div>
-                        <a href="#" class="logo">
+                        <a href="index.html" class="logo">
                             <img src="images/logo.png" class="logo" />
                         </a>
                     </div>
         
-                    <a href="#">Contact</a>
+                    <a href="#contactUS">Contact</a>
                 </div>
         </div>
     </header>
@@ -55,7 +56,12 @@
         <div class="swiper mySwiper3">
             <div class="swiper-wrapper">
               <div class="swiper-slide overlay-black">
-                <img src="images/banner2.png" alt=""/>
+
+                <picture>
+                    <source media="(min-width:650px)" srcset="images/banner2.png">
+                    <img src="images/banner2-xs.jpg" class="img-fluid" >
+                  </picture>
+
 
                 <div class="slider-caption">
                     <h2 class="mb-3 heading-1 text-shadow">India's Tallest Mall</h2>
@@ -66,7 +72,10 @@
               </div>
 
               <div class="swiper-slide overlay-black">
-                <img src="images/banner2.png" alt=""/>
+                <picture>
+                    <source media="(min-width:650px)" srcset="images/banner2.png">
+                    <img src="images/banner2-xs.jpg" class="img-fluid" >
+                  </picture>
 
                 <div class="slider-caption">
                     <h2 class="mb-3 heading-1 text-shadow">India's Tallest Mall</h2>
@@ -90,7 +99,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h2 class="heading-1 text_priamry">The space. <br/> The Ambition, <br/> The Investment<br/> Opportunity. </h2>
+                    <h2 class="heading-1 text_priamry">The space. <br/> The Ambition. <br/> The Investment.<br/> Opportunity. </h2>
                     <small class="d-block">We set the tallest standard.</small>
 
                     <ul class="list-group style-5 list-group-flush mt-5 p-0 m-0">
@@ -117,11 +126,9 @@
 
     <section class="p-5 section-3">
         <div class="container-fluid">
-            <div class="row align-items-center">
+            <div class="row align-items-center flex-lg-row-reverse">
 
-                <div class="col-md-6">
-                    <img src="images/watchman.jpg" class="img-fluid" />
-                </div>
+               
 
                 <div class="col-md-6">
                     <h2 class="heading-1 text_priamry">RARELY DOES <br/> OPULENCE COME  <br/> WITH SUCH<br/> AN OPPORTUNITY.
@@ -186,6 +193,10 @@
 
                 </div> 
 
+                <div class="col-md-6">
+                    <img src="images/watchman.jpg" class="img-fluid" />
+                </div>
+
                
             </div>
         </div>
@@ -205,7 +216,7 @@
 
          
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -217,7 +228,7 @@
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -230,7 +241,7 @@
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -244,7 +255,7 @@
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -258,7 +269,7 @@
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -272,7 +283,7 @@
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M180-140v-680h40v80h120v-80h280v80h120v-80h40v680h-40v-80H620v80H340v-80H220v80h-40Zm40-120h120v-120H220v120Zm0-160h120v-120H220v120Zm0-160h120v-120H220v120Zm400 320h120v-120H620v120Zm0-160h120v-120H620v120Zm0-160h120v-120H620v120ZM380-180h200v-600H380v600Zm0-600h200-200Z"/></svg>
@@ -284,7 +295,7 @@
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -298,7 +309,7 @@
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -309,7 +320,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -322,7 +333,7 @@
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="box-icon pb-5">
                     <span class="icon">
                         
@@ -341,7 +352,7 @@
 
 
     
-    <section class="p-5 section-5 ">
+    <section class="p-5 section-5 " id="contactUS">
         <div class="container-fluid">
 
 
@@ -353,46 +364,52 @@
             </div>
 
 
-            <div class="row mt-5">
+            <div class="row  mt-3 mt-md-5">
                 <div class="col-md-12">
-                    <div class="envelope">
-                        <div class="back">
-                            <div class="cover-text"></div>
-                        </div>
-                        <form class="letter">
-                            <p>
-                                <label>Name:</label>
-                                <input type="text" name="name" />
-                            </p>
 
-                            <p>
-                                <label>Mobile:</label>
-                                <input type="text" name="name" />
-                            </p>
+                    
+                
+<div class="envelope">
+    <div class="back">
+        <div class="cover-text"></div>
+    </div>
+   
+    <form class="letter" id="contactForm" method="post" action="contact.php" onsubmit=" validateForm(event)">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+        </p>
 
-                            <p>
-                                <label>Email:</label>
-                                <input type="email" name="email" />
-                            </p>
+        <p>
+            <label for="mobile">Mobile:</label>
+            <input type="text" name="mobile" id="mobile" pattern="[0-9]{10}" />
+        </p>
 
-                            <button type="submit" href="#" class="cta">
-                                <span>Click me</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                  <path d="M1,5 L11,5"></path>
-                                  <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                              </button>
-                        </form>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+        </p>
 
-                        <div class="evn-logo">
-                            <img src="images/logo.png" />
-                        </div>
+        <button type="submit" class="cta">
+            <span>Click me</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+        </button>
+    </form>
 
+    <div class="evn-logo">
+        <img src="images/logo.png" />
+    </div>
 
-                        <button type="button" class="close-env">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m336-307.69 144-144 144 144L652.31-336l-144-144 144-144L624-652.31l-144 144-144-144L307.69-624l144 144-144 144L336-307.69ZM480.13-120q-74.67 0-140.41-28.34-65.73-28.34-114.36-76.92-48.63-48.58-76.99-114.26Q120-405.19 120-479.87q0-74.67 28.34-140.41 28.34-65.73 76.92-114.36 48.58-48.63 114.26-76.99Q405.19-840 479.87-840q74.67 0 140.41 28.34 65.73 28.34 114.36 76.92 48.63 48.58 76.99 114.26Q840-554.81 840-480.13q0 74.67-28.34 140.41-28.34 65.73-76.92 114.36-48.58 48.63-114.26 76.99Q554.81-120 480.13-120Zm-.13-40q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
-                        </button>
-                    </div>
+    <button class="close-env">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+            <path d="m336-307.69 144-144 144 144L652.31-336l-144-144 144-144L624-652.31l-144 144-144-144L307.69-624l144 144-144 144L336-307.69ZM480.13-120q-74.67 0-140.41-28.34-65.73-28.34-114.36-76.92-48.63-48.58-76.99-114.26Q120-405.19 120-479.87q0-74.67 28.34-140.41 28.34-65.73 76.92-114.36 48.58-48.63 114.26-76.99Q405.19-840 479.87-840q74.67 0 140.41 28.34 65.73 28.34 114.36 76.92 48.63 48.58 76.99 114.26Q840-554.81 840-480.13q0 74.67-28.34 140.41-28.34 65.73-76.92 114.36-48.58 48.63-114.26 76.99Q554.81-120 480.13-120Zm-.13-40q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
+        </svg>
+    </button>
+</div>
+                    
                     
                       
                 </div>
@@ -403,7 +420,12 @@
 
             <section class="px-0 ps-0 p-5 section-6 ">
                 <div class="img-box position-relative ">
-                    <img src="images/banner1.jpg" class="img-fluid h-full object-cover" />
+
+                    
+                <picture>
+                    <source media="(min-width:650px)" srcset="images/banner1.jpg">
+                    <img src="images/banner1-xs.jpg" class="img-fluid h-full object-cover" >
+                  </picture>
 
                     <h2 class="heading-1 text-white text-shadow">
                         Boutique spaces, <br/>
@@ -722,8 +744,13 @@
 
                     <section class="px-0 ps-0 p-5 section-8 pb-0">
                         <div class="img-box position-relative overlay-black">
-                            <img src="images/girl-in-black.jpg" class="img-fluid h-full object-cover" />
-        
+                            
+
+                            <picture>
+                                <source media="(min-width:650px)" srcset="images/girl-in-black.jpg">
+                                <img src="images/girl-in-black-xs.jpg" class="img-fluid h-full object-cover" >
+                              </picture>
+
                             <h2 class="heading-1 text-white text-shadow">
                                 Styled for the lavish life
                             </h2>
@@ -926,12 +953,53 @@
             
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.5/sweetalert2.min.js" integrity="sha512-JCDnPKShC1tVU4pNu5mhCEt6KWmHf0XPojB0OILRMkr89Eq9BHeBP+54oUlsmj8R5oWqmJstG1QoY6HkkKeUAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js" integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js" integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
 
 <script src="js/main.js"></script>
 
+
+<script>
+   
+ // JavaScript validation function
+function validateForm(event) {
+    event.preventDefault();  // Prevent form submission (page reload)
+   
+    const name = document.getElementById('name').value.trim();
+    const mobile = document.getElementById('mobile').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if (!name) {
+        Swal.fire('Validation Error', 'Please enter your name', 'error');
+        return false;
+    }
+
+    if (!/^[0-9]{10}$/.test(mobile)) {
+        Swal.fire('Validation Error', 'Please enter a valid 10-digit mobile number', 'error');
+        return false;
+    }
+
+    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+        Swal.fire('Validation Error', 'Please enter a valid email address', 'error');
+        return false;
+    }
+
+    return true; // Allow form submission if all fields are valid
+
+    
+
+}
+
+</script>
   </body>
 </html>

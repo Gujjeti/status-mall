@@ -573,3 +573,74 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+
+@media screen and (max-width: 1080px) {
+    section.p-5{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+
+    .section-6.p-5, .section-8.p-5 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .letter {
+        position: relative;
+        top: 0;
+        padding: 20px 10px;
+        width: 100%;
+        height: auto;
+
+        opacity: 1;
+   
+    }
+
+    .envelope {
+        width: 100%;
+        height: auto;
+      
+    }
+
+    .back {
+
+        display: none;
+    }
+
+
+    .envelope::before, .envelope::after, .evn-logo{display: none;}
+   
+    .slider-caption {
+     
+        top: 20px;
+        left: 0;
+        justify-content: start;
+        padding: 30px;
+        width: 100%;
+        right: 0;
+    }
+
+
+    .img-box.position-relative {
+        height: 80vh;
+    }
+
+    .img-box.position-relative img {
+        height: 100%;
+    }
+
+    .img-box h2 {
+        top: 40px;
+        right: 0;
+        transform: none;
+        left: 30px;
+    }
+
+
+  }

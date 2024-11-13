@@ -1,3 +1,4 @@
+
 var swiper3 = new Swiper(".mySwiper3", {
     grabCursor: true,
     effect: "creative",
@@ -17,7 +18,9 @@ var swiper3 = new Swiper(".mySwiper3", {
     },
   });
 
+  
 
+if(window.innerWidth > 1080){
 
   let tl1 = gsap.timeline({
     // yes, we can add it to an entire timeline!
@@ -158,7 +161,7 @@ tl4.addLabel('start')
   tl11.addLabel('start')
   .from('#gallery .parent-container a', { x:200, stagger:0.2, autoAlpha: 0 })
 
-
+}
       document.querySelector('.envelope').addEventListener('click', function() {
         this.classList.toggle('opened');
     });
@@ -168,11 +171,7 @@ tl4.addLabel('start')
         event.stopPropagation();
     });
     
-    document.querySelector('.letter').addEventListener('submit', function(event) {
-        event.preventDefault();
-        this.reset();
-        document.querySelector('.envelope').classList.remove('opened'); // Optional: close envelope after submission
-    });
+
     
     
   
