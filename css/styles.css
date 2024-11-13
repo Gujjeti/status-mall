@@ -85,7 +85,7 @@ header a{
     font-size: 1em;
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 2.5em;
     width: 35%;
     display: flex;
     justify-content: center;
@@ -120,6 +120,9 @@ header a{
    line-height: 1.4;
   }
 
+  .box-icon{
+    text-align: center;
+  }
   .box-icon .icon svg{
     width: 3em;
     height: 3em;
@@ -140,6 +143,21 @@ header a{
     border-radius: 100px;
 }
 
+.box-icon.style-2{
+    text-align: center;
+}
+.box-icon.style-2 .icon{
+    background-color: transparent;
+}
+
+.box-icon.style-2 .icon svg{
+
+    fill: #fff
+  }
+
+  .box-icon.style-2 p{
+    color: #fff;
+  }
 
 .envelope {
     width: 600px; /* Set width to 600px */
@@ -449,7 +467,24 @@ button.close-env {
 
 .list-style-3 .list-group-item.active{
     border-color: var(--text_priamry);
+    margin: 0 !important;
 
+}
+
+.border-bottom-style-1 {
+    position: relative;
+    padding-bottom: 0.5em;
+}
+
+.border-bottom-style-1::before {
+    content: '';
+    position: absolute;
+    width: 5em;
+    background: var(--text_priamry);
+    height: 3px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media screen and (min-width: 480px) {
@@ -458,7 +493,49 @@ button.close-env {
    }
   }
 
+.floorAvailList{
+    margin-top: 2em;
+    display: none;
+   
+}
 
+.floorAvailList.show{
+    display: block;
+}
+
+.floorAvailList li{
+    color: var(--text_priamry);
+    font-size: 1.2em;
+    padding: 0.5em;
+    display: flex;
+    gap: 10px;
+}
+  .floorAvailList li svg{
+    fill: var(--text_priamry);
+    width: 35px;
+    height: 35px;
+  }
+
+  .bg-img{
+    background-size: cover;
+    background-attachment: fixed;
+   min-height: 100vh;
+   position: relative;
+   z-index: 2;
+  }
+
+  .bg-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: -1;
+}
   
 ::-webkit-scrollbar-track
 {
@@ -478,4 +555,10 @@ button.close-env {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: var(--text_priamry);
+}
+
+
+.list-group.style-5 li {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
