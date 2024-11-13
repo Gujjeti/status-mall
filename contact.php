@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         title: 'Message Sent',
                         text: 'Thank you, we will contact you shortly.'
                     }).then(function() {
-                        window.location = 'index.html';
+                        window.location = 'index.php';
                     });
                   </script>";
         } else {
