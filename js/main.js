@@ -146,6 +146,19 @@ tl4.addLabel('start')
     .from(['.section-10 .heading-1, .section-10 small, .section-10 p'], { y:100, stagger:0.2, autoAlpha: 0 })
     .from(['.section-10 img'], { scale:0,  autoAlpha: 0 })
 
+
+    let tl11 = gsap.timeline({
+      scrollTrigger: {
+          trigger: '#gallery',
+          start: 'top 80%',
+    
+      }
+  });
+  
+  tl11.addLabel('start')
+  .from('#gallery .parent-container a', { x:200, stagger:0.2, autoAlpha: 0 })
+
+
       document.querySelector('.envelope').addEventListener('click', function() {
         this.classList.toggle('opened');
     });
@@ -188,5 +201,15 @@ tl4.addLabel('start')
     }
     
 
-
+    $(document).ready(function(){
+      $('.parent-container').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery:{
+          enabled:true
+        }
+        // other options
+      });
+    });
+    
 
