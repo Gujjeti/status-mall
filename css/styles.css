@@ -487,21 +487,33 @@ button.close-env {
     transform: translateX(-50%);
 }
 
+
+
+.accordion-item{
+    border-color: var(--text_priamry);
+   
+}
+
+.accordion-button{
+    color: var(--text_priamry);
+    padding: 1.5em;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--text_priamry);
+    color: #fff;
+}
 @media screen and (min-width: 480px) {
    .container-fluid{
     padding: 0 5%;
    }
   }
 
-.floorAvailList{
-    margin-top: 2em;
-    display: none;
-   
-}
 
-.floorAvailList.show{
-    display: block;
-}
 
 .floorAvailList li{
     color: var(--text_priamry);
@@ -572,6 +584,56 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em;
+}
+
+
+.menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000000de;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-list.show{
+    opacity: 1;
+    visibility:visible
+
+}
+
+.menu-list a {
+    font-size: 1.5em;
+    padding: 0.5em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.menu-list a:hover{
+    color: var(--text_priamry);
+}
+
+button#menuClose {
+    background: transparent;
+    bottom: 0;
+    border: 0;
+    position: absolute;
+    top: -90%;
+    right: 2em;
+}
+
+button#menuClose svg {
+    fill: #fff;
+    width: 30px;
+    height: 30px;
 }
 
 

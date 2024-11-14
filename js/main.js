@@ -140,8 +140,7 @@ tl4.addLabel('start')
             trigger: '.section-10',
             start: 'top top',
             end: '+=700',
-            pin: true,
-            scrub: 1,
+       
         }
     });
     
@@ -209,6 +208,16 @@ tl4.addLabel('start')
         }
         // other options
       });
+
+
+      $('#menuBtn').click(function(){
+        $('.menu-list').addClass('show');
+      })
+
+      $('#menuClose, .menu-list a').click(function(){
+        $('.menu-list').removeClass('show');
+      })
+
     });
     
 
