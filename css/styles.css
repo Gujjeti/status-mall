@@ -521,6 +521,7 @@ button.close-env {
     padding: 0.5em;
     display: flex;
     gap: 10px;
+    text-transform: capitalize;
 }
   .floorAvailList li svg{
     fill: var(--text_priamry);
