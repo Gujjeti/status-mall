@@ -176,28 +176,6 @@ tl4.addLabel('start')
   
     
 
-    function showDiv(id, element) {
-      // Remove 'show' class from all elements with 'floorDetails' class
-      document.querySelectorAll('.floorAvailList').forEach(div => {
-        div.classList.remove('show');
-      });
-      
-      // Add 'show' class to the specific div with the provided id
-      const targetDiv = document.getElementById(id);
-      if (targetDiv) {
-        targetDiv.classList.add('show');
-      }
-
-   document.querySelectorAll('#floors li').forEach(li => {
-    li.classList.remove('active');
-  });
-  
-  // Add 'active' class to the clicked <li> element
-  element.classList.add('active');
-
-
-    }
-    
 
     $(document).ready(function(){
       $('.parent-container').magnificPopup({
