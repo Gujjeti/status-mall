@@ -52,7 +52,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Set headers to send HTML email
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= "From: $email";
+        $headers .= "From: no-reply@status-mall.com"; // Replace with your domain's email address
+        
 
         if (mail($to, $subject, $message, $headers)) {
             echo "<script>
